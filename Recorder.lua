@@ -6,11 +6,7 @@ for I = 1, 2 do
 end
 
 local IsLocalMode = false
-local BaseUrl = (IsLocalMode and "http://192.168.88.100:9999") or "https://raw.githubusercontent.com/DEVIX7/X2botWJuv8stnFRnJTDGqoqtRN8gHtTDXStrat/master"
 local Version = "1.6"
-
-local LoadReqs = loadstring(game:HttpGet(BaseUrl .. "/reqs.lua"))()
-local Dep1, Dep2, Dep3 = LoadReqs()
 
 if (getgenv().StratName == false) or (getgenv().StratName == nil) then
 	print("Using default strat name")
