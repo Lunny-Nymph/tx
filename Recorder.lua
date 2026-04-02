@@ -32,7 +32,7 @@ end
 
 getgenv().Loadout = table.concat(LoadoutList, ",")
 
-local FileHeader = "--" .. Version .. '\nlocal api = loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DEVIX7/X2botWJuv8stnFRnJTDGqoqtRN8gHtTDXStrat/master/API/API.lua\", true))()\napi:loadout({' .. getgenv().Loadout .. '})\napi:map(\"' .. getgenv().MapName .. '\")\n'
+local FileHeader = "--" .. Version .. '\nlocal api = loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Lunny-Nymph/tx/refs/heads/main/API.lua\", true))()\napi:loadout({' .. getgenv().Loadout .. '})\napi:map(\"' .. getgenv().MapName .. '\")\n'
 writefile(StratName .. ".txt", FileHeader)
 
 local LastTick = tick()
